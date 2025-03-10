@@ -1,15 +1,17 @@
-def a(b):
-    c = sum(d.count(1) for d in b)
-    if c == 0:
-        return 0
-    elif c == 1 or c == 2:
-        return 1
+
+t = int(input().strip())
+
+for _ in range(t):
+    
+    field = [list(map(int, input().strip().split())) for _ in range(2)]
+
+    
+    num_of_cells = sum(row.count(1) for row in field)
+
+    
+    if num_of_cells == 0:
+        print(0)  
+    elif num_of_cells == 1 or num_of_cells == 2:
+        print(1)  
     else:
-        return 2
-
-e = int(input().strip())
-
-for _ in range(e):
-    f = [list(map(int, input().strip().split())) for _ in range(2)]
-    g = a(f)
-    print(g)
+        print(2)  
