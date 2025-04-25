@@ -1,5 +1,5 @@
 def solve():
-    import sys
+    import sys # for imporitng the system 
     input = sys.stdin.read().split()
     ptr = 0
     t = int(input[ptr])
